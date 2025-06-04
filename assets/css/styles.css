@@ -1,0 +1,76 @@
+/* assets/css/styles.css */
+
+/* Estilos personalizados adicionales */
+.paso {
+    transition: all 0.3s ease;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+/* Estilos para el logo */
+.logo-uniclaretiana {
+    height: 40px;
+    width: auto;
+}
+
+/* Efecto hover para tarjetas */
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Estilos para el menú móvil */
+@media (max-width: 640px) {
+    .mobile-menu {
+        display: none;
+    }
+    
+    .mobile-menu.active {
+        display: block;
+    }
+}
+
+/* Personalización de scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+/* assets/css/styles.css */
+.carrera-item {
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+.carrera-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.carrera-item.active {
+    border-color: #3b82f6;
+    background-color: #eff6ff;
+}
